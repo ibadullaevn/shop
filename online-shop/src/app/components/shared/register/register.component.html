@@ -1,0 +1,60 @@
+<form class="registr">
+  <div class="input">
+    <div class="form-group">
+      <input class="form-control" type="text" autocomplete="off" placeholder="Username"  name="a_username" [(ngModel)]="register.username">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" autocomplete="off" placeholder="E-mail"  name="E-mail" [(ngModel)]="register.email">
+    </div>
+    <div class="form-group">
+      <input  class="form-control" type="password" autocomplete="off" placeholder="Password" id="password" name="a_password"[(ngModel)]="register.password">
+    </div>
+    <div>
+      <button class="btn btn-primary btn-block btn-sm" type="submit" id="submit" (click)="registerUser()">Register</button>
+    </div>
+  </div>
+
+</form>
+<!--<form class="card-body">-->
+<!--  <div class="raw">-->
+<!--    <div class="panel-heading">-->
+<!--      <h3 class="panel-title" style="text-align: center; margin-bottom: 10px ">Please sign up for Almaty store</h3>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="row">-->
+<!--    <div class="col">-->
+<!--      <div class="form-group">-->
+<!--        <input type="text" name="first_name" id="first_name" class="form-control input-sm"-->
+<!--               placeholder="First Name">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col">-->
+<!--      <div class="form-group">-->
+<!--        <input type="text" name="last_name" id="last_name" class="form-control input-sm"-->
+<!--               placeholder="Last Name">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <div class="form-group">-->
+<!--    <input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">-->
+<!--  </div>-->
+
+<!--  <div class="row">-->
+<!--    <div class="col">-->
+<!--      <div class="form-group">-->
+<!--        <input type="password" name="password" id="password" class="form-control input-sm"-->
+<!--               placeholder="Password">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col">-->
+<!--      <div class="form-group">-->
+<!--        <input type="password" name="password_confirmation" id="password_confirmation"-->
+<!--               class="form-control input-sm" placeholder="Confirm Password">-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--  <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign up</button>-->
+
+<!--</form>-->

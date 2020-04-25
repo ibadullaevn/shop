@@ -1,0 +1,25 @@
+
+<div class="row " id="margin">
+  <div>
+    <p class="card-text">
+      Product id: {{productList.id}}
+    </p>
+      <p class="card-text">
+       Product name: <strong>{{productList.name}}</strong>
+      </p>
+      <p class="card-text">
+       Description: {{productList.description}}
+      </p>
+      <p class="card-text">
+      Price: <strong>{{productList.price | currency: ' KZT '}}</strong>
+      </p>
+
+    <p class="card-text">
+      {{productList.categoryId}}
+    </p>
+    <button (click)="goBack()">Back</button>
+</div>
+</div>
+
+
+

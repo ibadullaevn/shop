@@ -1,0 +1,35 @@
+<app-nav></app-nav>
+
+<div *ngIf="!logged" >
+
+  <form class="formaa">
+    <div class="input">
+      <div class="form-group">
+        <input class="form-control" type="text" autocomplete="off" placeholder="Username" id="username" name="username" [(ngModel)] ="username">
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="password" autocomplete="off" placeholder="Password" id="password" name="password" [(ngModel)] ="password">
+      </div>
+      <div>
+        <button type="submit" id="submit" (click)="login()" class="btn btn-primary btn-block btn-sm" >Login</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="container " *ngIf="logged">
+  <button class="btn btn-outline-primary" id="logout" (click)="logout()">Logout</button>
+
+  <div class="row">
+    <div class="col">
+      <app-shopping-cart></app-shopping-cart>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>
+
